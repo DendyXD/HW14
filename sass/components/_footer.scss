@@ -1,0 +1,55 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 70px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &-nav {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+  }
+
+  &-adress {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $white;
+  }
+
+  &-link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &-links {
+    margin-top: 11px;
+  }
+
+  .join-us {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+}

@@ -1,0 +1,74 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 0;
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  &-card {
+    background: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lorem {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
+
+  .loremname {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $black;
+    margin-top: 30px;
+  }
+
+  .lorem-text {
+    margin-top: 10px;
+  }
+
+  .antena {
+    background-image: url(../imges/icons/antenna\ 1.svg);
+    width: 70px;
+    height: 70px;
+  }
+
+  .clock {
+    background-image: url(../imges/icons/clock\ 1.svg);
+    width: 70px;
+    height: 70px;
+  }
+
+  .computer {
+    background-image: url(../imges/icons/diagram\ 1.svg);
+    width: 70px;
+    height: 70px;
+  }
+
+  .astronaut {
+    background-image: url(../imges/icons/astronaut\ 1.svg);
+    width: 70px;
+    height: 70px;
+  }
+}

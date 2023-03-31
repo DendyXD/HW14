@@ -1,0 +1,13 @@
+.our-works {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
+  &-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+}
+

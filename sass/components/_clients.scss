@@ -1,0 +1,73 @@
+.clients {
+  &-list {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90px;
+    gap: 30px;
+
+    @media (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 90px 90px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 90px 90px 90px;
+    }
+
+    .companies {
+      min-height: 100%;
+      min-width: 100%;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      gap: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #afb1b8;
+
+      &:hover {
+        border-color: $blue;
+        color: $blue;
+      }
+
+      .company1 {
+        background-image: url(../imges/icons/logo\ 1.svg);
+        width: 44px;
+        height: 49px;
+      }
+
+      .company2 {
+        background-image: url(../imges/icons/logo\ 2.svg);
+        width: 40px;
+        height: 52px;
+      }
+
+      .company3 {
+        background-image: url(../imges/icons/logo\ 3.svg);
+        width: 41px;
+        height: 42px;
+      }
+
+      .company4 {
+        background-image: url(../imges/icons/logo\ 4.svg);
+        width: 80px;
+        height: 42px;
+      }
+
+      .company5 {
+        background-image: url(../imges/icons/logo\ 5.svg);
+        width: 59px;
+        height: 47px;
+      }
+
+      .company6 {
+        background-image: url(../imges/icons/logo\ 6.svg);
+        width: 88px;
+        height: 45px;
+      }
+    }
+  }
+}

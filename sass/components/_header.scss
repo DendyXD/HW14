@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 100%;
+
+  @media (max-width: 1200px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  &_links_flex {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &_links_flex2 {
+    display: flex;
+    gap: 50px;
+    color: $blue;
+    align-items: center;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 12px;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &_links2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: $black;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &_links {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $black;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .email::before {
+    content: url("./imges/icons/envelope.svg");
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .tel::before {
+    content: url("./imges/icons/Vector.svg");
+    margin-right: s5px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+}

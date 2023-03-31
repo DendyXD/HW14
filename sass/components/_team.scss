@@ -1,0 +1,55 @@
+.team {
+  background-color: #f5f4fa;
+
+  &-koloda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    .worker-card {
+      background-color: $white;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 32px;
+        gap: 10px;
+      }
+
+      .imya {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $black;
+      }
+      .work {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+
+        color: #757575;
+      }
+    }
+  }
+}

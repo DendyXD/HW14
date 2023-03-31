@@ -1,0 +1,54 @@
+.landing {
+  padding: 200px 0 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imges/background_landing.png);
+
+  @media (max-width: 480px) {
+    background-image: url(../imges/background_landing.png);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #start {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin-bottom: 30px;
+    color: $white;
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+
+  #posluga {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      line-height: 30px;
+      display: flex;
+    }
+  }
+}
